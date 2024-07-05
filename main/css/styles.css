@@ -62,7 +62,7 @@ section{
 .contentContainer{
 	display: inline-flex;
 	flex-wrap: wrap;
-	gap: 5px;
+	gap: 10px;
 	border: 0;
 	padding: 0;
 }
@@ -96,6 +96,7 @@ section{
 	left: 0;
 	top:0px;
 	font-size: 16px;
+	text-transform: uppercase;
 	font-weight: normal;
 	white-space: normal;
 	color: #cce5ff;
