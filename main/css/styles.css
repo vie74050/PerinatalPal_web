@@ -53,17 +53,18 @@ section{
 	padding: 1.5em;
 }
 .textbox{
+	line-height: 2.3em;
 	padding: 1em;
 	width: 100%;
 	background-color: rgba(30, 25, 75,0.1);
 }
 
-.ipad{
-	display: table;
-	background-color:rgba(110, 137,180, 1); 
-	border: 3.5em solid #000; 
-	border-radius: 1.5em;
-	box-shadow: 10px 10px 5px #888;
+.contentContainer{
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 5px;
+	border: 0;
+	padding: 0;
 }
 .emphasis{
 	position: relative;
@@ -80,20 +81,22 @@ section{
 /* over ride bootstrap */
 
 .carousel{
-	float: left;
-	margin: 5% 1.6%;
-	width: 30%;
+	position: relative;
+	margin: 0;
+	outline: 1px solid #000;
+	width: 49%;
+	flex-grow: 1;
+	aspect-ratio: 4/3;
 }
 .carousel-caption{
-	background-color: rgb(5,5,5);
+	background-color: rgb(0, 0, 0);
 	padding: 0;
 	width: 100%;
-	height:20%;
+	height:3em;
 	left: 0;
 	top:0px;
-	font-size: .9em;
+	font-size: 16px;
 	font-weight: normal;
-	font-size: 14px;
 	white-space: normal;
 	color: #cce5ff;
 }
@@ -114,17 +117,30 @@ bottom:35px;
 	left:0;
 }
 .carousel-inner {
-  	height: 175px;
+  	height: 100%;
   	background-color: rgba(0,0,0,0.8);
+}
+.item{
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100%;
 }
 .carousel-inner p{
 	color: #fff;
 	padding: 0 .5em;
 }
-.youtube{
+.youtube, .item>a{
+	display: block;
 	width: 100%;
-	height: auto;
-	margin-top:22px;
+	padding-top: 2.5em;
+	aspect-ratio: 4/3;
+}
+.item>a>img{
+	width: 100%;
+	height: 100%;
+}
+.small {
+	font-size: 0.7em;
 }
 
 footer{
@@ -132,35 +148,11 @@ footer{
 }
 /* media query for screen size */
 
-@media (max-width: 768px) {
-  	.youtube{
-  		height: 134px;
-  	}
-  	.ipad{
-  		border: 2.5em solid #000; 
-  	}
+@media (max-width: 700px) {
+	.carousel{
+		width: 100%;
+	}
 }
-@media (max-width: 540px) {
-	.youtube{
-  		height: 230px;
-  		width: 330px;
-  	}
-  	.carousel{
-  		width: 100%;
-  		margin: 1em auto;
-  	}
-  	.ipad{
-  		display:block;
-  		border: none;
-  		border-radius: none;
-  		box-shadow: 0 0 0 #888;
-  		padding: 0;
-  		width: 330px;
-  		background-color:rgba(110, 137,180, 0); 
-  		margin: 1em auto;
-  	}
-}
-
 @media (max-width: 400px) {
 	h1{
 		font-size: 1.7em;

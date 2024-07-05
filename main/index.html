@@ -31,7 +31,9 @@
 		</header>
 		<nav>
 			<div class="btn-group">
-				
+				<a type="button" class="btn btn-default" href="#technical-info">
+					Technical Information
+				</a>
 				<a type="button" class="btn btn-default" href="#contact-info">
 					Contact Us
 				</a>
@@ -53,12 +55,12 @@
 
 		</section>
 
-		<section class="ipad"  id="app-info" >
+		<section class="contentContainer"  id="app-info" >
 
 			<div id="carousel1" class="carousel slide" data-ride="carousel" data-interval="false" >
 
 				<div class="carousel-inner">
-					<div class="item active" style="background: url(images/CA_1.png) no-repeat;background-size: 100%;">
+					<div class="item active" style="background-image: url(images/CA_1.png)">
 						<div class="carousel-caption" >
 							Cardinal movement video
 						</div>
@@ -84,21 +86,21 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					
-					<div class="item active"  style="background: url(images/CB_1.png) no-repeat;background-size: 100%;">
+					<div class="item active">
 						<div class="carousel-caption" >
 							See cardinal movement from <br />Top View.
 						</div>
 						<iframe class="youtube" src="https://www.youtube.com/embed/9iex2ekvOFU?rel=0&showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 					</div>
-					<div class="item"  style="background: url(images/CB_1.png) no-repeat;background-size: 100%;">
+					<div class="item">
 						<div class="carousel-caption" >
 							See cardinal movement from <br />Front View.
 						</div>
 						<iframe class="youtube" src="https://www.youtube.com/embed/3sK9leTx3QI?rel=0&showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 					</div>
-					<div class="item"  style="background: url(images/CB_1.png) no-repeat;background-size: 100%;">
+					<div class="item">
 						<div class="carousel-caption" >
 							See cardinal movement from <br />Side View.
 						</div>
@@ -117,7 +119,7 @@
 			<div id="carousel3" class="carousel slide" data-ride="carousel" data-interval="false" >
 
 				<div class="carousel-inner">
-					<div class="item active" style="background: url(images/leopold_1.png) no-repeat;background-size: 100%;">
+					<div class="item active">
 						<div class="carousel-caption" >
 							Leopold's Maneuver video
 						</div>
@@ -138,13 +140,11 @@
 				<div class="carousel-inner">
 					<div class="item active">
 						<div class="carousel-caption">
-							Fetal Positions 3D <br />(Click to open webapp)
+							Fetal Positions 3D <br /><span class="small">(Click to open )</span>
 						</div>
 						<a href="https://vie74050.github.io/PerinatalPal_web/Positions/" target="_blank" >
-							<img class="img-responsive" src="images/positions_2.png" alt="thumbnail" title="click to launch interactive object">
+							<img class="img-responsive" src="images/positions.png" alt="thumbnail" title="click to launch interactive object">
 						</a>
-						
-						<p>Click to launch</p>
 					</div>
 					
 				</div>
@@ -157,13 +157,11 @@
 				<div class="carousel-inner">
 					<div class="item active">
 						<div class="carousel-caption" >
-							Stations 3D <br />(Click to open webapp)
+							Stations 3D <br /><span class="small">(Click to open )</span>
 						</div>
 						<a href="https://vie74050.github.io/PerinatalPal_web/Stations/" target="_blank" >
-							<img class="img-responsive" src="images/stations_2.png" alt="thumbnail" title="click to launch interactive object">
+							<img class="img-responsive" src="images/stations.png" alt="thumbnail" title="click to launch interactive object">
 						</a>
-						
-						<p>Click to launch</p>
 					</div>
 					
 				</div>
@@ -177,7 +175,7 @@
 					
 				</ol>
 				<div class="carousel-inner">
-					<div class="item active" style="background: url(images/maternal_position.png) no-repeat;background-size: 100%;">
+					<div class="item active">
 						<div class="carousel-caption" >
 							Maternal Positioning
 						</div>
@@ -186,7 +184,7 @@
 						</iframe>
 
 					</div>
-					<div class="item" style="background: url(images/shoulder_dystocia.png) no-repeat;background-size: 100%;">
+					<div class="item">
 						<div class="carousel-caption" >
 							Shoulder Dystocia
 						</div>
@@ -205,17 +203,28 @@
 			</div>
 
 		</section>
+
+		<section id="technical-info">
+			<h1>Technical Information</h1>
+			<div class="textbox" >
+				<p>
+					"Fetal Positions 3D" and "Stations 3D" web apps are designed to be viewed on WebGL-enabled browsers. Most of the popular desktop browsers will support WebGL. See <a href="https://caniuse.com/webgl" _target="blank">https://caniuse.com/webgl</a> for a list of supported browsers.
+				</p>
+				<p>
+					These 3D elements were developed using the <a href="https://docs.unity3d.com/2018.4/Documentation/Manual/webgl-browsercompatibility.html" target="_blank">Unity WebGL</a> and support on mobile browsers may be limited.  If you are experience issues on a mobile device, please try viewing the app on a desktop browser or turning on <b>"Desktop Site"</b> mode on your mobile browser.
+				</p>				
+		</section>
 				
 		<section id="contact-info">
 
 			<h1>Contact Us</h1>
 			<div class="textbox" >
 				<p>
-					<strong>Perinatal Pal</strong> was conceived by Nancy Hewer, <a href="http://www.bcit.ca/study/programs/specialtynursing" target="_blank">BCIT’s School of Health Sciences Specialty Nursing</a> Faculty, and brought to life by members of <a href="http://www.bcit.ca/ltc/" target="_blank">BCIT’s Learning and Teaching Centre</a> including Vienna Ly, Jason Yu, William Mah, Alistair Boakes, and Michelle Kearns.
+					<strong>Perinatal Pal</strong> was conceived by Nancy Hewer, and developed by <a href="http://www.bcit.ca/ltc/" target="_blank">BCIT’s Learning and Teaching Centre</a>  Vienna Ly, Jason Yu, William Mah, Alistair Boakes, and Michelle Kearns.
 				</p>
 
 				<p>
-					If you'd like to contact us regarding feedback or issues with the app, <a href="mailto: LTCApple@bcit.ca?subject=Perinatal Pal web feedback">email us at [ LTCApple @ bcit.ca ]</a>.
+					If you'd like to contact us regarding feedback or issues with the app, email us at <a href="mailto: vpdev@bcit.ca?subject=Perinatal Pal web feedback">[ vpdev @ bcit.ca ]</a>.
 				</p>
 
 				<a type="button"  class="btn btn-default btn-xs pull-right" href="#"> Top &uarr; </a>
